@@ -41,13 +41,13 @@
                     <div class="navigation">
                         <div id="navigation">
                             <ul>
-                                <li class="active"><a href="inicio" title="Inicio">Inicio</a></li>
-                                <li class="has-sub"><a href="lista-de-servicios" title="Lista de Servicios">Lista de
+                                <li class="active"><a href="index.html" title="Inicio">Inicio</a></li>
+                                <li class="has-sub"><a href="service-list.html" title="Lista de Servicios">Lista de
                                         Servicios</a>
                                 </li>
-                                <li class="has-sub"><a href="nuestro-trabajo" title="Nuesrto Trabajo">Nestro trabajo</a>
-                                <li><a href="sobre-nosotros" title="Sobre nosotros">Sobre nosotros</a>
-                                <li><a href="contacto" title="Contacto">Contacto</a> </li>
+                                <li class="has-sub"><a href="blog-default.html" title="Nuesrto Trabajo">Nestro trabajo</a>
+                                <li><a href="testimonial.html" title="Sobre nosotros">Sobre nosotros</a>
+                                <li><a href="contac.html" title="Contact">Contacto</a> </li>
                             </ul>
                         </div>
                     </div>
@@ -171,34 +171,7 @@
     <!-- sticky header -->
     <script src="js/jquery.sticky.js"></script>
     <script src="js/sticky-header.js"></script>
-    <script>
-    // Función para redirigir según la URL solicitada
-    function redirect() {
-      var path = window.location.pathname;
-      switch (path) {
-        case '/inicio':
-          window.location.href = 'index.html';
-          break;
-        case '/nuestro-trabajo':
-          window.location.href = 'blog-default.html';
-          break;
-        case '/lista-de-servicios':
-          window.location.href = 'service-list.html';
-          break;
-        case '/contacto':
-          window.location.href = 'contact.html';
-          break;
-        case '/sobre-nosotros':
-          window.location.href = 'testimonial.html';
-          break;
-        default:
-          // Redirigir a una página de error estándar
-          window.location.href = 'error.html';
-      }
-    }
-    // Llama a la función de redirección cuando se carga la página
-    window.onload = redirect;
-        </script>
+
 </body>
 
 </html>
