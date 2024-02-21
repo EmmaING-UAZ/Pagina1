@@ -224,6 +224,33 @@
     <!-- sticky header -->
     <script src="js/jquery.sticky.js"></script>
     <script src="js/sticky-header.js"></script>
+    <script>
+    // Función para redirigir según la URL solicitada
+    function redirect() {
+      var path = window.location.pathname;
+      switch (path) {
+        case '/inicio':
+          window.location.href = 'index.html';
+          break;
+        case '/nuestro-trabajo':
+          window.location.href = 'blog-default.html';
+          break;
+        case '/lista-de-servicios':
+          window.location.href = 'service-list.html';
+          break;
+        case '/contacto':
+          window.location.href = 'contact.html';
+          break;
+        case '/sobre-nosotros':
+          window.location.href = 'testimonial.html';
+          break;
+        default:
+          // Redirigir a una página de error estándar
+          window.location.href = 'error.html';
+      }
+    }
+    // Llama a la función de redirección cuando se carga la página
+    window.onload = redirect;
 </body>
 
 </html>
