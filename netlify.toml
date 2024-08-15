@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/service-list"
+  to = "/lista-de-servicios"
+  status = 301
